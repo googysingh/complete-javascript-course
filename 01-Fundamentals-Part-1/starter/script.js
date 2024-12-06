@@ -28,7 +28,6 @@ console.log(continent);
 console.log(population);
 */
 
-/*
 //Data Type
 
 true;
@@ -43,7 +42,7 @@ console.log(typeof javaScriptIsFun);
 console.log(typeof 23);
 console.log(typeof 'John');
 
-//Dynamic typing
+//Dynamic typing same variable javaScriptIsFun is now become string from boolean
 javaScriptIsFun = "Gurpreet";
 console.log("Value of Java Script is", javaScriptIsFun);
 console.log(typeof javaScriptIsFun);
@@ -56,10 +55,10 @@ year = 1993;
 console.log("Value of year is", year);
 console.log(typeof year);
 
-console.log(typeof null)'
-
+console.log(typeof null);
 */
-//Basic Operator
+
+// Basic Operator
 
 /*
 const now = 2037
@@ -99,6 +98,7 @@ console.log(ageJohn > ageSarah) // >, <, >=, <=
 console.log(ageSarah >= 18);
 
 const isFullAge = ageSarah >= 18;
+console.log(isFullAge);
 console.log(now - 1991 > now - 2018);
 
 let x, y;
@@ -197,8 +197,9 @@ const heightMark = 1.69;
 const massJohn = 92;
 const heightJohn = 1.95;
 
-const BMIMark = massMark / (heightMark * heightMark);
-const BMIJohn = massJohn / (heightJohn * heightJohn);
+//The .toFixed() method returns a string representing the number rounded to a specified number of decimal places.
+const BMIMark = (massMark / (heightMark * heightMark)).toFixed(2);
+const BMIJohn = (massJohn / (heightJohn * heightJohn)).toFixed(2);
 console.log(BMIMark, BMIJohn);
 
 // Write your code below. Good luck! 🙂
@@ -207,16 +208,18 @@ if (BMIJohn > BMIMark) {
     console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!`)
 } else {
     console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`)
-}*/
+}
+*/
 
 
 // Type Converison and Coercion
-/*
+
 const inputYear = '1991';
 console.log(Number(inputYear), inputYear);
 console.log(typeof Number(inputYear), typeof inputYear);
 console.log(Number(inputYear) + 18);
 
+console.log(String(1922));
 console.log(Number('Gurpreet'));
 console.log(typeof NaN);
 
@@ -230,6 +233,7 @@ console.log('I am ' + String(23) + 'year old');
 
 //Very importnt concept -,*,/ will start javascript to convert string into number and then do tha calculation
 console.log('23' - '10' - 3);
+console.log('10' + 3);
 console.log('23' + '10' + 3);
 
 console.log('23' * '2');
@@ -246,7 +250,7 @@ console.log(m);
 
 console.log(2 + 3 + 4 + '5');
 
-*/
+
 
 //Truthy and Faslsy Values
 

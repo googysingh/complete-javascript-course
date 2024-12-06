@@ -180,4 +180,86 @@ scoreDolphins = calcAverage(85, 54, 41);
 scoreKoalas = calcAverage(23, 34, 27);
 checkWinner(scoreDolphins, scoreKoalas);
 */
-//Array
+/*
+// Introduction to Array
+const friend1 = 'Michael';
+const friend2 = 'Steven';
+const friend3 = 'Peter';
+
+const friends = ['Michael', 'Steven', 'Peter']
+console.log(friends);
+
+const years = new Array(1991, 1994, 2008, 2020);
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = 'Gurpreet';
+console.log(friends[friends.length - 1]); //Here point to note is that we can change const declared array, because it is not a primitive value . Primitive values are distinct from objects in JavaScript, which are complex data types that can hold multiple values and have methods and properties. When you manipulate primitive values, JavaScript treats them as immutable, meaning that the original value remains unchanged, and any operations create new values rather than modifying the existing ones.
+
+//friends = ['Bob', 'Singh'] //This is not possible
+
+
+const firstName = 'Manpreet';
+const jonas = [firstName, 'Schmedtmann', 2037 - 1991, 'teacher', friends];
+
+console.log(jonas);
+console.log(jonas.length);
+
+//Exercise
+
+const calcAge = function (birthYear) {
+    return 2037 - birthYear;
+}
+
+const years1 = [1990, 1967, 2002, 2010, 2018];
+console.log(calcAge(years1)); //This will not work
+
+console.log(calcAge(years1[0]));
+console.log(calcAge(years1[years1.length - 1]));
+
+const ages = [(calcAge(years1[0])), (calcAge(years1[years1.length - 1]))];
+
+console.log(ages);
+*/
+
+//Basic Array = Methods
+
+/*
+const friends = ['Michael', 'Steven', 'Peter'];
+console.log(friends);
+
+//Add Element Method
+let newlength = friends.push('Jay'); //Add a new element at the last and return current length of array
+
+console.log(newlength);
+console.log(friends);
+
+newlength = friends.unshift('John'); //Add a new element at the start and return current length of array
+console.log(newlength);
+console.log(friends);
+
+//Remove element Method
+const lastelement = friends.pop(); //remove and return last element
+
+console.log(lastelement);
+console.log(friends);
+
+let firstElement = friends.shift(); //Remove first and return the element
+console.log(firstElement);
+console.log(friends);
+
+// Index of values
+console.log(friends.indexOf('Steven'));
+console.log(friends.indexOf('Bob')); //Return -1 if element is not present 
+
+//Search the elements
+console.log(friends.includes('Steven')); //Return true
+console.log(friends.includes('bob')); //Return false
+
+if (friends.includes('Steven')) {
+    console.log('YOu have a frined called Steven');
+}
+*/
